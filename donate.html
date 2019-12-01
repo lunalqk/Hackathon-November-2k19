@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Donate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="css1.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+	
+	.button {
+		  background-color: red;
+		  border: none;
+		  color: white;
+		  padding: 7px 16px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+</style>
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Search</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About</a>
+            <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-white">Donate to us</a>
+            <a href="loc.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Track your order</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">Donate to us</h1>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <div class="w3-twothird">
+                <h1>Donate</h1>
+                <p class="w3-text-grey">
+                    We are a non profit organization that aims to provide education to as many people as possible, all donations will be used to fund further development. 
+                </p>
+            </div>
+
+            <div class="w3-third w3-center">
+                <p class="w3-padding-64 w3-text-grey" style="float:left;">
+                    <form action="donate.php" method="post">
+
+                        Card number:
+                        <input type="text" placeholder="card number.." name="cnum">
+                        <br /><br />
+                        Expiration date:
+                        <input type="text" placeholder="MM" name="month" style="width:30px"> /
+                        <input type="text" placeholder="DD" name="day" style="width:30px"> /
+                        <input type="text" placeholder="YYYY" name="year" style="width:50px">
+                        <br /><br />
+                        Cvv:
+                        <input type="text" placeholder="3 digits" name="cvv" style="width:60px">
+                        <br /><br />
+                        Name:
+                        <input type="text" placeholder="Name.." name="name">
+                        <br /><br />
+                        Amount:
+                        <input type="text" placeholder="Amount.." name="amount">
+                        <br /><br />
+
+                        <input type="reset" class="button">
+
+                        <button type="submit" class="search button">Donate</button>
+                    </form>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+        <h1 class="w3-margin w3-xlarge">Thank you for using Uber Learns</h1>
+        <p>Contact us at: (+1) 778-888-9999 or uberlearns@gmail.com</p>
+        <p>financial aid can be applied for through email</p>
+    </div>
+
+
+
+    <!-- Footer -->
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        } else {
+        x.className = x.className.replace(" w3-show", "");
+        }
+        }
+        function topFunction() {
+        document.body.scrollTop = 963;
+        document.documentElement.scrollTop = 400;
+        }
+    </script>
+
+</body>
+</html>
