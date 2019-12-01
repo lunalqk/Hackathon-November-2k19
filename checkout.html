@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Koomon course</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="css1.css">
+<link rel="stylesheet" href="cssCheckbox.css">
+<style>
+    .column {
+        float: left;
+        width: 50%;
+        padding-left: 20px;
+    }
+
+    /*Clearfloatsafterthecolumns*/
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato",sans-serif
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat",sans-serif
+    }
+
+    /* Style the list */
+ul.breadcrumb {
+  list-style: none;	
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+  color: red;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: red;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: red;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: light-grey;
+  text-decoration: underline;
+}
+	
+	.button {
+		  background-color: red;
+		  border: none;
+		  color: white;
+		  padding: 7px 16px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Search</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About</a>
+            <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Donate to us</a>
+            <a href="loc.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Track your order</a>
+        </div>
+    </div>
+
+    <!-- First Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Search</a></li>
+                <li><a href="courses.html">Koomon</a></li>
+                <!--<li><a href="#">Algebra</a></li>-->
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+
+
+            <div class="row">
+                <div class="w3-twothird" style="padding-right:50px">
+                    <h3>Course Description</h3>
+                    <p>
+                        The subjects covered include advanced quadratics, polynomials, conics, general functions, logarithms, clever factorizations and substitutions,
+                        systems of equations, sequences and series, symmetric sums, advanced factoring methods, classical inequalities, functional equations, and more.
+                    </p>
+
+                    <h4>19 weeks</h4>
+                    <h4>Instructor: <a href='MathTeacher.html'><u>Elizabeth Alvarez</u></a></h4>
+                    <h4>September 10th - January 9th</h4>
+
+                    <h4 style="background-color: grey; padding: 10px; color:white">Video Lectures ($1.50 each)</h4>
+
+                    <form method="post" action="/Tests/Post/">
+                        <fieldset>
+                            <input type="checkbox" name="Lesson 1" value="Lesson 1">Lesson 1<br>
+                            <input type="checkbox" name="Lesson 2" value="Lesson 2">Lesson 2<br>
+                            <input type="checkbox" name="Lesson 3" value="Lesson 3">Lesson 3<br>
+                            <input type="checkbox" name="Lesson 4" value="Lesson 4">Lesson 4<br>
+                            <input type="checkbox" name="Lesson 5" value="Lesson 5">Lesson 5<br>
+                            <input type="checkbox" name="Lesson 6" value="Lesson 6">Lesson 6<br>
+                            <input type="checkbox" name="Lesson 7" value="Lesson 7">Lesson 7<br>
+                            <input type="checkbox" name="Lesson 8" value="Lesson 8">Lesson 8<br>
+                            <input type="checkbox" name="Lesson 9" value="Lesson 9">Lesson 9<br>
+                            <input type="checkbox" name="Lesson 10" value="Lesson 10">Lesson 10<br>
+                            <input type="checkbox" name="Lesson 11" value="Lesson 11">Lesson 11<br>
+                            <input type="checkbox" name="Lesson 12" value="Lesson 12">Lesson 12<br>
+                            <input type="checkbox" name="Lesson 13" value="Lesson 13">Lesson 13<br>
+                            <input type="checkbox" name="Lesson 14" value="Lesson 14">Lesson 14<br>
+                            <input type="checkbox" name="Lesson 15" value="Lesson 15">Lesson 15<br>
+                            <input type="checkbox" name="Lesson 16" value="Lesson 16">Lesson 16<br>
+                            <input type="checkbox" name="Lesson 17" value="Lesson 17">Lesson 17<br>
+                            <input type="checkbox" name="Lesson 18" value="Lesson 18">Lesson 18<br>
+                            <input type="checkbox" name="Lesson 19" value="Lesson 19">Lesson 19<br>
+                        </fieldset>
+                    </form>
+
+
+                    <h4 style="background-color: grey; padding: 10px; color:white">Lesson Notes ($0.50 each)</h4>
+
+                    <form method="post" action="/Tests/Post/">
+                        <fieldset>
+                            <input type="checkbox" name="Lesson 1" value="Lesson 1">Lesson 1<br>
+                            <input type="checkbox" name="Lesson 2" value="Lesson 2">Lesson 2<br>
+                            <input type="checkbox" name="Lesson 3" value="Lesson 3">Lesson 3<br>
+                            <input type="checkbox" name="Lesson 4" value="Lesson 4">Lesson 4<br>
+                            <input type="checkbox" name="Lesson 5" value="Lesson 5">Lesson 5<br>
+                            <input type="checkbox" name="Lesson 6" value="Lesson 6">Lesson 6<br>
+                            <input type="checkbox" name="Lesson 7" value="Lesson 7">Lesson 7<br>
+                            <input type="checkbox" name="Lesson 8" value="Lesson 8">Lesson 8<br>
+                            <input type="checkbox" name="Lesson 9" value="Lesson 9">Lesson 9<br>
+                            <input type="checkbox" name="Lesson 10" value="Lesson 10">Lesson 10<br>
+                            <input type="checkbox" name="Lesson 11" value="Lesson 11">Lesson 11<br>
+                            <input type="checkbox" name="Lesson 12" value="Lesson 12">Lesson 12<br>
+                            <input type="checkbox" name="Lesson 13" value="Lesson 13">Lesson 13<br>
+                            <input type="checkbox" name="Lesson 14" value="Lesson 14">Lesson 14<br>
+                            <input type="checkbox" name="Lesson 15" value="Lesson 15">Lesson 15<br>
+                            <input type="checkbox" name="Lesson 16" value="Lesson 16">Lesson 16<br>
+                            <input type="checkbox" name="Lesson 17" value="Lesson 17">Lesson 17<br>
+                            <input type="checkbox" name="Lesson 18" value="Lesson 18">Lesson 18<br>
+                            <input type="checkbox" name="Lesson 19" value="Lesson 19">Lesson 19<br>
+                        </fieldset>
+                    </form>
+
+                    <h4 style="background-color: grey; padding: 10px; color:white">Practice Problems (Free)</h4>
+
+                    <form method="post" action="/Tests/Post/">
+                        <fieldset>
+                            <input type="checkbox" name="Lesson 1" value="Lesson 1">Lesson 1<br>
+                            <input type="checkbox" name="Lesson 2" value="Lesson 2">Lesson 2<br>
+                            <input type="checkbox" name="Lesson 3" value="Lesson 3">Lesson 3<br>
+                            <input type="checkbox" name="Lesson 4" value="Lesson 4">Lesson 4<br>
+                            <input type="checkbox" name="Lesson 5" value="Lesson 5">Lesson 5<br>
+                            <input type="checkbox" name="Lesson 6" value="Lesson 6">Lesson 6<br>
+                            <input type="checkbox" name="Lesson 7" value="Lesson 7">Lesson 7<br>
+                            <input type="checkbox" name="Lesson 8" value="Lesson 8">Lesson 8<br>
+                            <input type="checkbox" name="Lesson 9" value="Lesson 9">Lesson 9<br>
+                            <input type="checkbox" name="Lesson 10" value="Lesson 10">Lesson 10<br>
+                            <input type="checkbox" name="Lesson 11" value="Lesson 11">Lesson 11<br>
+                            <input type="checkbox" name="Lesson 12" value="Lesson 12">Lesson 12<br>
+                            <input type="checkbox" name="Lesson 13" value="Lesson 13">Lesson 13<br>
+                            <input type="checkbox" name="Lesson 14" value="Lesson 14">Lesson 14<br>
+                            <input type="checkbox" name="Lesson 15" value="Lesson 15">Lesson 15<br>
+                            <input type="checkbox" name="Lesson 16" value="Lesson 16">Lesson 16<br>
+                            <input type="checkbox" name="Lesson 17" value="Lesson 17">Lesson 17<br>
+                            <input type="checkbox" name="Lesson 18" value="Lesson 18">Lesson 18<br>
+                            <input type="checkbox" name="Lesson 19" value="Lesson 19">Lesson 19<br>
+                        </fieldset>
+                    </form>
+
+                    <h4 style="background-color: grey; padding: 10px; color:white">Homework ($0.10 each)</h4>
+
+                    <form method="post" action="/Tests/Post/">
+                        <fieldset>
+                            <input type="checkbox" name="Lesson 1" value="Lesson 1">Lesson 1<br>
+                            <input type="checkbox" name="Lesson 2" value="Lesson 2">Lesson 2<br>
+                            <input type="checkbox" name="Lesson 3" value="Lesson 3">Lesson 3<br>
+                            <input type="checkbox" name="Lesson 4" value="Lesson 4">Lesson 4<br>
+                            <input type="checkbox" name="Lesson 5" value="Lesson 5">Lesson 5<br>
+                            <input type="checkbox" name="Lesson 6" value="Lesson 6">Lesson 6<br>
+                            <input type="checkbox" name="Lesson 7" value="Lesson 7">Lesson 7<br>
+                            <input type="checkbox" name="Lesson 8" value="Lesson 8">Lesson 8<br>
+                            <input type="checkbox" name="Lesson 9" value="Lesson 9">Lesson 9<br>
+                            <input type="checkbox" name="Lesson 10" value="Lesson 10">Lesson 10<br>
+                            <input type="checkbox" name="Lesson 11" value="Lesson 11">Lesson 11<br>
+                            <input type="checkbox" name="Lesson 12" value="Lesson 12">Lesson 12<br>
+                            <input type="checkbox" name="Lesson 13" value="Lesson 13">Lesson 13<br>
+                            <input type="checkbox" name="Lesson 14" value="Lesson 14">Lesson 14<br>
+                            <input type="checkbox" name="Lesson 15" value="Lesson 15">Lesson 15<br>
+                            <input type="checkbox" name="Lesson 16" value="Lesson 16">Lesson 16<br>
+                            <input type="checkbox" name="Lesson 17" value="Lesson 17">Lesson 17<br>
+                            <input type="checkbox" name="Lesson 18" value="Lesson 18">Lesson 18<br>
+                            <input type="checkbox" name="Lesson 19" value="Lesson 19">Lesson 19<br>
+                        </fieldset>
+                    </form>
+
+                    <h4 style="background-color: grey; padding: 10px; color:white">Other</h4>
+
+                    <form method="post" action="/Tests/Post/">
+                        <fieldset>
+                            <input type="checkbox" name="Textbook" value="Textbook">Textbook<br>
+                            <input type="checkbox" name="Workbook" value="Workbook">Workbook<br>
+                            <input type="checkbox" name="Extra" value="Extra">Extra problem workbook<br>
+                        </fieldset>
+                    </form>
+
+                </div>
+
+                <div class="w3-third">
+                    <h3>Payment Form:</h3>
+                    <!--thanks.php-->
+                    <form action="" method="post">
+                        Want to help others?
+                        <br />
+                        <table>
+                            <label><input type="radio" placeholder="0" name="0"> $0 - Cover costs </label>
+                            <tr></tr>
+                            <br />
+                            <tr>
+                                <label><input type="radio" placeholder="0" name="0"> <input type="text" placeholder="Enter amount" name="donate"> - Pay it forward</label>
+                            </tr>
+                        </table>
+                        Card number:
+                        <input type="text" placeholder="card number.." name="cnum">
+                        <br /><br />
+                        Expiration date:
+                        <input type="text" placeholder="MM" name="month" style="width:35px"> /
+                        <input type="text" placeholder="DD" name="day" style="width:35px"> /
+                        <input type="text" placeholder="YYYY" name="year" style="width:60px">
+                        <br /><br />
+                        Cvv:
+                        <input type="text" placeholder="3 digits" name="cvv" style="width:60px">
+                        <br /><br />
+                        Name:
+                        <input type="text" placeholder="Name.." name="name">
+                        <br /><br />
+                        Discount Code:
+                        <input type="text" placeholder="Code.." name="code">
+                        <br /><br />
+
+                        <input type="reset" class="button">
+
+                        <!--<button type="submit" class="search button" onclick="">Confirm Payment</button>-->
+                    </form>
+                    <br />
+                    <a href="loc.html"> <button class="search button">Confirm Payment</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+        <p>Contact us at: (+1) 778-888-9999 or uberlearns@gmail.com</p>
+        <p>financial aid can be applied for through email</p>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        } else {
+        x.className = x.className.replace(" w3-show", "");
+        }
+        }
+
+    </script>
+
+</body>
+</html>
