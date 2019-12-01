@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Search</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="css1.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+	
+	.button {
+		  background-color: red;
+		  border: none;
+		  color: white;
+		  padding: 7px 16px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+</style>
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Search</a>
+            <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">About</a>
+            <a href="donate.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Donate to us</a>
+            <a href="loc.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Track your order</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-red w3-center" style="padding:128px 16px">
+        <h1 class="w3-margin w3-jumbo">Search for Courses</h1>
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="topFunction()">Get Started</button>
+    </header>
+
+    <!-- First Grid -->
+    <div class="w3-padding-64 w3-container">
+        <div class="w3-content w3-twothird" style="padding-bottom: 30px; padding-left: 50px">
+            <p class="w3-text-grey">
+                This search engine will show the nearest education centres that have partnered with us, you can order your course materials from them and we will deliver them to you.
+                Please enter your address, grade, email and intended subject of study.
+            </p>
+            <form action="">
+                <p>
+                    Address:
+                    <input type="text" placeholder="Address.." name="Address">
+                    <br /><br />
+                    Level of education:
+                    <input type="text" placeholder="Grade.." name="Grade">
+                    <br /><br />
+                    Email:
+                    <input type="text" placeholder="Email.." name="Email">
+                    <br /><br />
+                </p>
+
+                <input type="reset" class="button">
+
+                <button type="submit" class="search button">Search</button>
+            </form>
+
+            <br /><br /><br /><br />
+            <a href="courses.html">
+                <div class="boxf">
+                    <img src="https://cdn.theatlantic.com/assets/media/img/mt/2016/09/classroom/lead_720_405.jpg?mod=1533691845" alt="school example" style="float: right; width: 150px; height: 150px;">
+                    <p style="padding-right: 25%;">
+                        School Name: Koomon<br />
+
+                        From Grade 1 - 12<br />
+
+                        Address: 0000 Main St Somecity<br /><br />
+
+                        Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </a>
+
+            <br /><br />
+
+            <a href="courses.html">
+                <div class="boxf">
+                    <img src="https://cdn.theatlantic.com/assets/media/img/mt/2016/09/classroom/lead_720_405.jpg?mod=1533691845" alt="school example" style="float: right; width: 150px; height: 150px;">
+                    <p style="padding-right: 25%;">
+                        School Name: This Senior School<br />
+
+                        From Grade 1 - 12<br />
+
+                        Address: 0000 Main St Somecity<br /><br />
+
+                        Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </a>
+            <a href="courses.html">
+                <br /><br />
+                <div class="boxf">
+                    <img src="https://cdn.theatlantic.com/assets/media/img/mt/2016/09/classroom/lead_720_405.jpg?mod=1533691845" alt="school example" style="float: right; width: 150px; height: 150px;">
+                    <p style="padding-right: 25%;">
+                        School Name: This Senior School<br />
+
+                        From Grade 1 - 12<br />
+
+                        Address: 0000 Main St Somecity<br /><br />
+
+                        Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+        <h1 class="w3-margin w3-xlarge">Thank you for using Uber Learns</h1>
+        <p>Contact us at: (+1) 778-888-9999 or uberlearns@gmail.com </p>
+        <p>financial aid can be applied for through email</p>
+</div>
+
+
+
+    <!-- Footer -->
+    <script>
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        function topFunction() {
+			document.body.scrollTop = 963;
+			document.documentElement.scrollTop = 400;
+		}
+    </script>
+
+</body>
+</html>
+<!--
+    
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-third w3-center">
+            <i class="fa fa-coffee w3-padding-64 w3-text-amber w3-margin-right"></i>
+        </div>
+
+        <div class="w3-twothird">
+            <h1>Lorem Ipsum</h1>
+            <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+            <p class="w3-text-grey">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </div>
+</div>
+
+-->
